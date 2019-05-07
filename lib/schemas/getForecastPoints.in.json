@@ -1,0 +1,14 @@
+{
+    "type": "object",
+    "properties": {
+        "yatchclubid": {
+            "required": true,
+            "type": "string",
+            "default": "cnarenal"
+        },
+        "language": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

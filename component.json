@@ -1,0 +1,204 @@
+{
+    "title": "ODWeather",
+    "description": "This is the api to access the ODWeather API information",
+    "docsUrl": "",
+    "url": "https://api.apis.guru/v2/specs/oceandrivers.com/1.0/swagger.json",
+    "envVars": {},
+    "credentials": {
+        "fields": {
+            "server": {
+                "label": "Server",
+                "viewClass": "SelectView",
+                "model": [
+                    "http://api.oceandrivers.com/",
+                    "--- Custom URL"
+                ],
+                "required": true
+            },
+            "otherServer": {
+                "label": "Custom Server URL",
+                "viewClass": "TextFieldView"
+            }
+        }
+    },
+    "triggers": {
+        "startFlow": {
+            "main": "./lib/triggers/startFlow.js",
+            "type": "polling",
+            "title": "Start Flow",
+            "fields": {}
+        }
+    },
+    "actions": {
+        "compareStation": {
+            "main": "./lib/actions/compareStation.js",
+            "title": "Get forecast and realtime information for known points<br/>None",
+            "description": "Get forecast and realtime information for known points<br/>None",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/compareStation.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getAemetStation": {
+            "main": "./lib/actions/getAemetStation.js",
+            "title": "Get data from the aemet stations<br/>None",
+            "description": "Get data from the aemet stations<br/>None",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getAemetStation.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getEasywind": {
+            "main": "./lib/actions/getEasywind.js",
+            "title": "Get data from the easywind weather stations<br/>None",
+            "description": "Get data from the easywind weather stations<br/>None",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getEasywind.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getEventStations": {
+            "main": "./lib/actions/getEventStations.js",
+            "title": "Get stations in an event<br/>None",
+            "description": "Get stations in an event<br/>None",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getEventStations.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getForecastPoints": {
+            "main": "./lib/actions/getForecastPoints.js",
+            "title": "Get forecast points of a yatchclub<br/>None",
+            "description": "Get forecast points of a yatchclub<br/>None",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getForecastPoints.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getForecastTimeSeries": {
+            "main": "./lib/actions/getForecastTimeSeries.js",
+            "title": "Get timeseries forecast information<br/>None",
+            "description": "Get timeseries forecast information<br/>None",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getForecastTimeSeries.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getForecastTimeSeriesWrf": {
+            "main": "./lib/actions/getForecastTimeSeriesWrf.js",
+            "title": "Get timeseries forecast information<br/>None",
+            "description": "Get timeseries forecast information<br/>None",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getForecastTimeSeriesWrf.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getSocibWeatherStation": {
+            "main": "./lib/actions/getSocibWeatherStation.js",
+            "title": "Get data from the socib bahia de palma buoy<br/>None",
+            "description": "Get data from the socib bahia de palma buoy<br/>None",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getSocibWeatherStation.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getWeatherDisplay": {
+            "main": "./lib/actions/getWeatherDisplay.js",
+            "title": "Get data from the weather display software<br/>None",
+            "description": "Get data from the weather display software<br/>None",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getWeatherDisplay.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getWebCams": {
+            "main": "./lib/actions/getWebCams.js",
+            "title": "Get forecast and realtime information for known points<br/>None",
+            "description": "Get forecast and realtime information for known points<br/>None",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getWebCams.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "type": "object",
+    "properties": {
+        "stationName": {
+            "required": true,
+            "type": "string",
+            "default": "boyaenderrocat"
+        },
+        "period": {
+            "required": true,
+            "type": "string",
+            "default": "lastdata"
+        }
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "type": "object",
+    "properties": {
+        "easywindId": {
+            "required": true,
+            "type": "string",
+            "default": "EW013"
+        },
+        "period": {
+            "required": true,
+            "type": "string",
+            "default": "latestdata"
+        }
+    }
+}

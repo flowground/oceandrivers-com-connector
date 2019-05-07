@@ -1,0 +1,47 @@
+{
+    "type": "object",
+    "properties": {
+        "latitude": {
+            "required": true,
+            "type": "number",
+            "format": "float",
+            "default": 39.49
+        },
+        "longitude": {
+            "required": true,
+            "type": "number",
+            "format": "float",
+            "default": 2.74
+        },
+        "inittime": {
+            "required": false,
+            "type": "string"
+        },
+        "endtime": {
+            "required": false,
+            "type": "string"
+        },
+        "days": {
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+        },
+        "hours": {
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+        },
+        "weather": {
+            "required": true,
+            "type": "string"
+        },
+        "wave": {
+            "required": false,
+            "type": "string"
+        },
+        "entryid": {
+            "required": false,
+            "type": "string"
+        }
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "type": "object",
+    "properties": {
+        "eventId": {
+            "required": true,
+            "type": "string",
+            "default": "trofeoprincesasofia"
+        }
+    }
+}

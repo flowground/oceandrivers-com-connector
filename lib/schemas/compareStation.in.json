@@ -1,0 +1,10 @@
+{
+    "type": "object",
+    "properties": {
+        "stationName": {
+            "required": true,
+            "type": "string",
+            "default": "cnarenal"
+        }
+    }
+}
